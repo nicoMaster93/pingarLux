@@ -1,0 +1,29 @@
+backend/logs/
+
+# Variable de entorno
+backend/conexion/.ini
+backend/conexion/prod.ini
+
+# Base de datos 
+backend/brenntag.sql
+
+# Generador de servicios
+backend/serviceGenerated.php
+
+#Mac
+.DS_Store
+**/.DS_Store
+
+#Api Documentacion
+backend/apiDoc.json
+backend/apiDoc-develop.json
+backend/example-documentation
+
+# Variables de entorno
+backend/.env
+backend/.env.dev
+backend/.env.prod
+
+# archivos de prueba
+backend/test.php
+www/_index.php

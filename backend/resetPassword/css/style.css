@@ -1,0 +1,134 @@
+.container{
+    background-image: url(../../resources/images/mask1.png);
+    min-height: 700px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    text-align: right;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.clearfix::after, .container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.header {
+    height: max-content;
+    width: 300px;
+    position: relative;
+    display: inline-block;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+.body {
+    height: 500px;
+    width: 350px;
+    display: block;
+    float:right;
+    margin-top:40px;
+    text-align: center;
+    margin-right: 45px;
+    background: white;
+}
+
+.header img {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    float:right;
+}
+
+input{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    height: 35px;
+    border-radius: 5px;
+}
+
+button{
+    background: linear-gradient(29.31deg, #BB1BE1 6.65%, #0C72ED 82.92%);
+    display: block;
+    width: 70%;
+    height: 35px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 40px;
+    cursor:pointer;
+}
+.text-center{
+    margin-bottom: 35px;
+}
+.validate{
+    list-style: none;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #d3f7ff;
+    padding: 5px;
+}
+.validate li{
+    margin: 3px 0px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: left;
+}
+.validate li span{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.glyphicon-remove, .text-danger{
+    color:red;
+}
+.glyphicon-ok, .text-success{
+    color:green;
+}
+#alertFo{
+    font-size: 12px;
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        width: 100%;
+        margin: auto auto;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+    .header img{
+        width: 80%;
+    }
+    .body {
+        width: 100%;
+        float: inherit;
+        background: transparent;
+    }
+    .footer {   
+        text-align: center;
+    }
+    .validate{
+        width: 90%;
+        margin: auto;
+        margin-top: -18px;
+    }
+    input{
+        border:none;
+    }
+    #alertFo{
+        font-size: 15px;
+    }
+}

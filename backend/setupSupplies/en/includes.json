@@ -1,0 +1,44 @@
+{
+    "0a00514d-4b6b-055a-47ef-23738a52db6d": {
+        "id" : "0a00514d-4b6b-055a-47ef-23738a52db6d",
+        "icon": "ic14.png",
+        "class":"fa fa-car",
+        "text": "Car Parking"
+    },
+    "6e601664-729f-74c2-da16-af3200293d65": {
+        "id" : "6e601664-729f-74c2-da16-af3200293d65",
+        "icon": "ic12.png",
+        "class" : "fa-coffee",
+        "text": "Breakfast"
+    },
+    "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1": {
+        "id" : "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+        "icon": "ic13.png",
+        "class" : "fa-plane",
+        "text": "Transfer from Airport"
+    },
+    "6de62576-61d1-c04e-c62b-b746988e55df": {
+        "id" : "6de62576-61d1-c04e-c62b-b746988e55df",
+        "icon": "ic11.png",
+        "class" : "fa-wifi",
+        "text": "Free WiFi"
+    },
+    "3beb7300-e72f-77e1-3413-07eab9632da8": {
+        "id" : "3beb7300-e72f-77e1-3413-07eab9632da8",
+        "icon": "ic17.png",
+        "class" : "fa-cutlery",
+        "text": "Restaurant"
+    },
+    "3fba7be2-9489-ee85-9ad6-546b955fc18a": {
+        "id" : "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+        "icon": "ic18.png",
+        "class":"fa-snowflake-o",
+        "text": "Air Conditioning"
+    },
+    "3771f11b-4740-40db-f934-c84a07af824c": {
+        "id" : "3771f11b-4740-40db-f934-c84a07af824c",
+        "icon": "ic16.png",
+        "class":"fa-smile-o",
+        "text": "Casino"
+    }
+}

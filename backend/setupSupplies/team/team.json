@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "Jualiana Pinzón",
+        "occupation": "Directora",
+        "picture": "/assets/profiles/team02.jpg",
+        "socials" : {
+            "facebook" : "https://www.facebook.com",
+            "twitter" : "https://twitter.com", 
+            "instagram" : "https://www.instagram.com"
+        }
+    },
+    {
+        "name" : "Edith Owen",
+        "occupation": "SERVICE MANAGER",
+        "picture": "/assets/profiles/team03.jpg",
+        "socials" : {
+            "facebook" : "https://www.facebook.com",
+            "twitter" : "https://twitter.com", 
+            "instagram" : "https://www.instagram.com"
+        }
+    }
+]

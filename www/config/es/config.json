@@ -1,0 +1,42 @@
+{
+    "website":{
+        "viewsAllowed" : [
+            "index",
+            "about",
+            "rooms",
+            "contacts",
+            "details"
+        ],
+        "bookingPage" : ["rooms"]
+    },
+
+    "menu":{
+        "home": "Inicio",
+        "about": "Nosotros",
+        "rooms": "Alojamientos",
+        "contact": "Contáctanos"
+    },
+
+    "countries":{
+        "selected": "col",
+        "list":{
+            "usa" : {
+                "label": "Ingles (USA)",
+                "flag": "images/flags/us.png",
+                "path": "en"
+            },
+            "col" : {
+                "label": "Español (COL)",
+                "flag": "images/flags/co.png",
+                "path": "es"
+            }
+        }
+    },
+
+    "pages":{
+        "home": {},
+        "about": {},
+        "rooms": {},
+        "contact": {}
+    }
+}

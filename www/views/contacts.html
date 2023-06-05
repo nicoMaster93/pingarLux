@@ -1,0 +1,83 @@
+<div class="breadcrumbs1_wrapper">
+    <div class="container">
+        <div class="breadcrumbs1"><a href="index.html">{{menu.home}}</a><span>|</span>{{ menu.contact }}</div>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+
+        <div class="title1">{{ pages.contact.title }}</div>
+
+        <div class="title2">{{ pages.contact.description }}</div>
+
+        <div class="contact-location-wrapper">
+            <div id="google_map"></div>
+            <div class="contact-location">
+                <div class="txt1">{{ pages.contact.info.present }}</div>
+                <div class="txt2">{{ pages.contact.info.title }}</div>
+                <div class="txt3">{{ pages.contact.info.titleSmall }}</div>
+                <div class="txt4">{{ pages.contact.info.address }}</div>
+                <div class="txt5">
+                    <dl class="dl1">
+                        <dt>{{ pages.contact.info.tel.label }}</dt>
+                        <dd>{{ pages.contact.info.tel.value }}</dd>
+                        <dt>{{ pages.contact.info.email.label }}</dt>
+                        <dd><a href="{{ pages.contact.info.email.value }}" mailto="{{ pages.contact.info.email.value }}" >{{ pages.contact.info.email.value }}</a></dd>
+                        <dt>Facebook:</dt>
+                        <dd>{{ website.socials.facebook }}</dd>
+                        <dt>Twitter:</dt>
+                        <dd>{{ website.socials.twitter }}</dd>
+                        <dt>Instagram:</dt>
+                        <dd>{{ website.socials.instagram }}</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="title3">{{ pages.contact.form.title }}</div>
+
+        <div id="note"></div>
+        <div id="fields">
+            <form id="ajax-contact-form" class="form-horizontal clearfix" action="javascript:;">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="inputName2">{{ pages.contact.form.name }} <span>*</span></label>
+                                    <input type="text" class="form-control" id="inputName2" name="name" value=""
+                                           placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="inputEmail">{{ pages.contact.form.email }} <span>*</span></label>
+                                    <input type="text" class="form-control" id="inputEmail" name="email" value=""
+                                           placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="inputMessage2">{{ pages.contact.form.comment }} <span>*</span></label>
+                            <textarea class="form-control" rows="5" id="inputMessage2" name="content"
+                                      placeholder=""></textarea>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn-default btn-cf-submit">{{ pages.contact.form.button }}</button>
+            </form>
+        </div>
+
+
+    </div>
+</div>

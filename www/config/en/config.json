@@ -1,0 +1,127 @@
+{
+    "website":{
+        "api":"http://localhost/proyectsInHouse/JP/backend",
+        "viewsAllowed" : [
+            "index",
+            "about",
+            "rooms",
+            "contacts",
+            "details"
+        ],
+        "bookingPage" : ["rooms"],
+        "bookingFormPage" : ["index","rooms"],
+        "homePage" : "index",
+        "socials" : {
+            "facebook" : "https://www.facebook.com",
+            "twitter" : "https://twitter.com", 
+            "instagram" : "https://www.instagram.com"
+        }
+    },
+
+    "menu":{
+        "home" : "Home",
+        "about" : "About us",
+        "rooms" : "Bookings",
+        "contact" : "Contact"
+    },
+    
+    "countries":{
+        "selected": "usa",
+        "list":{
+            "usa" : {
+                "label": "English (USA)",
+                "flag": "images/flags/us.png",
+                "path": "en"
+            },
+            "col" : {
+                "label": "Spanish (COL)",
+                "flag": "images/flags/co.png",
+                "path": "es"
+            }
+        }
+    },
+
+    "pages":{
+        "home": {
+            "clients":{
+                "title": "WHAT CLIENT SAY",
+                "description": "These are the comments of our clients, in their stays with us"
+            }
+        },
+        "about": {
+            "title": "LITTLE ABOUT US",
+            "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
+            "slider": {
+                "one": {
+                    "image" :"images/about01.jpg",
+                    "info" : {
+                        "title": "Lorem ipsum dodor sit amet concateur, patrulo del suno lacrimosa.",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam sodales blandit faucibus. Nunc finibus, mi in tincidunt aliquet, ex orci venenatis arcu, inibus, mi in lore ipsum dolor.\nQuis.consequatnc neque et ex. Ut quis dictum ligula. Morbi porttitor mi id metus mollis. Sed dictum ligula finibus, mi in lore ipsum dolor. Morbi porttitor mi id metus mollis. Sed dictum ligula mi id metus msed dictum ligula nibus fbus, mi in lore ipsum dolor.",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
+                    }
+                },
+                "two": {
+                    "image" :"images/about02.jpg",
+                    "info" : {
+                        "title": "Lorem ipsum dodor sit amet concateur, patrulo del suno lacrimosa.",
+                        "description": "Morem ipsum dolor sit amet, consectetur adipiscing elit. aliquam sodales blandit faucibus. Nunc finibus, mi in tincidunt aliquet, ex orci venenatis arcu, inibus, mi in lore ipsum dolor.\nAuis.consequatnc neque et ex. Ut quis dictum ligula. Morbi porttitor mi id metus mollis. Sed dictum ligula finibus, mi in lore ipsum dolor. Morbi porttitor mi id metus mollis. Sed dictum ligula mi id metus mollised dictum ligula nibus finibus, mi in lore ipsum dolor.",
+                        "author": "SILIBISTRO KARKASHADZE",
+                        "occupation": "MANAGER"
+                    }
+                }
+            },
+            "team":{
+                "title": "Our Team",
+                "subtitle": "meet expert",
+                "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada"
+            }
+        },
+        "contact": {
+            "title": "CONTACT INFORMATION",
+            "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
+            "form": {
+                "title": "CONTACT FORM",
+                "name": "Name",
+                "email": "Email",
+                "comment": "Comments",
+                "button": "Send your message"
+            },
+            "info": {
+                "present": "KEEP IN TOUCH",
+                "title": "Pingar Lix Address",
+                "titleSmall": "Veteran owned & operated",
+                "address": "122 South City, Gridgum street\n NY 12099, United States",
+                "tel": {
+                    "label": "Call:",
+                    "value": "+1 (368) 1234567"
+                },
+                "email": {
+                    "label": "Email:",
+                    "value": "info@pingarlux.co"
+                }
+            }
+        },
+        "rooms": {
+            "description":"Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
+            "seeDetails":"See Room Details",
+            "selectDetails":"SELECT THIS ROOM",
+            "typeCost":"PER NIGTH",
+            "deposit": {
+                "label" : "DEPOSIT",
+                "value" : "REQUIRED 30%"
+            }
+        },
+        "footer":{
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum, ex at convallis interdum, <br>justo lectus posuere nulla, at consequat odio mauris quis sem. "
+        }
+    },
+
+    "formBooking":{
+        "button": "CHECK AVAILABILITY",
+        "checkin": "Check in",
+        "checkout": "Check out",
+        "adults": "Adults",
+        "children": "Children"
+    }
+}

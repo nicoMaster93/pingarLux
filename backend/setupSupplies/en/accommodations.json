@@ -1,0 +1,110 @@
+[
+    {
+        "id": "ba7fe0c7-3322-0353-a48f-028d38db1b1c",
+        "title":"Orlando",
+        "subtitle":"3 Bed Stay in Orlando",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales blandit faucibus. Nunc duo finibus, mi in tincidunt aliquet, ex orci Morbi porttitor mi id metus mollis. Sed dictum ligula. Lacosta pensare non tropo di sarono al brio monta.",
+        "price": "7000",
+        "currency": "US",
+        "views": "50 REVIEW",
+        "includes":[
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026", 
+            "lng": "-73.7212941"
+        },
+        "pictures":[
+            "/assets/accommodations/3bedstayinorlando/image6.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image7.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image8.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image9.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image10.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image11.jpeg"
+        ]
+    },
+    {
+        "id": "5e4e6a92-1b44-c134-eb0e-bcf6afcbacf4",
+        "title":"Kissimmee",
+        "subtitle":"Apartment in Kissimmee",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales blandit faucibus. Nunc duo finibus, mi in tincidunt aliquet, ex orci Morbi porttitor mi id metus mollis. Sed dictum ligula. Lacosta pensare non tropo di sarono al brio monta.",
+        "price": "700",
+        "currency": "US",
+        "views": "50 REVIEW",
+        "includes":[
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026", 
+            "lng": "-73.7212941"
+        },
+        "pictures":[
+            "/assets/accommodations/apartmentinkissimmee/image0.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image1.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image2.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image3.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image4.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image5.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image6.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image7.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image8.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image9.jpeg"
+        ]
+    },
+    {
+        "id": "f0fcac0b-553b-624c-f820-026859c3fde2",
+        "title":"Pinehills",
+        "subtitle":"Family Stay at Pinehills",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales blandit faucibus. Nunc duo finibus, mi in tincidunt aliquet, ex orci Morbi porttitor mi id metus mollis. Sed dictum ligula. Lacosta pensare non tropo di sarono al brio monta.",
+        "price": "700",
+        "currency": "US",
+        "views": "50 REVIEW",
+        "includes":[
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026", 
+            "lng": "-73.7212941"
+        },
+        "pictures":[
+            "/assets/accommodations/familystayatpinehillsnearparks/image0.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image1.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image2.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image3.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image4.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image5.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image6.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image7.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image8.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image9.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image10.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image11.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image12.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image13.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image14.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image15.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image16.jpeg"
+        ]
+    }
+]
