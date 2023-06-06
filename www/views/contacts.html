@@ -11,12 +11,12 @@
         <div class="title2">{{ pages.contact.description }}</div>
 
         <div class="contact-location-wrapper">
-            <div id="google_map"></div>
+            <div id="google_map" data-map-lat="{{ pages.contact.info.location.lat }}" data-map-lng="{{ pages.contact.info.location.lng }}"></div>
             <div class="contact-location">
                 <div class="txt1">{{ pages.contact.info.present }}</div>
                 <div class="txt2">{{ pages.contact.info.title }}</div>
                 <div class="txt3">{{ pages.contact.info.titleSmall }}</div>
-                <div class="txt4">{{ pages.contact.info.address }}</div>
+                <div class="txt4">{{ pages.contact.info.location.address }}</div>
                 <div class="txt5">
                     <dl class="dl1">
                         <dt>{{ pages.contact.info.tel.label }}</dt>
@@ -47,14 +47,14 @@
                                 <div class="form-group">
                                     <label for="inputName2">{{ pages.contact.form.name }} <span>*</span></label>
                                     <input type="text" class="form-control" id="inputName2" name="name" value=""
-                                           placeholder="">
+                                           placeholder="" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="inputEmail">{{ pages.contact.form.email }} <span>*</span></label>
                                     <input type="text" class="form-control" id="inputEmail" name="email" value=""
-                                           placeholder="">
+                                           placeholder="" required>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                         <div class="form-group">
                             <label for="inputMessage2">{{ pages.contact.form.comment }} <span>*</span></label>
                             <textarea class="form-control" rows="5" id="inputMessage2" name="content"
-                                      placeholder=""></textarea>
+                                      placeholder="" required></textarea>
                         </div>
 
                     </div>

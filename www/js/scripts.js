@@ -14,7 +14,7 @@ $(function () {
     /* Cargamos productos */
     .then(async ({lng, path}) => {
         const endPoint = "endpoint=Booking&action=getAllBooking";
-        const lenguage = { lng : "en" }
+        const lenguage = { lng : config }
         const products = await (new service()).get(endPoint , lenguage);
         if(products.code == 200){
             db.set("products", JSON.stringify(products.result))
@@ -99,6 +99,8 @@ $(function () {
     /* Valido Home Page */
     .then(async ({lng, path}) => {
         if(lng.website.homePage == path){
+            /* Listo el banner */
+            await getBannerHome(lng);
             /* Seccion About */
             const about = await (new service(`views/about`)).html(".html");   
             const renderAbout = renderHtml(about, lng)
@@ -106,6 +108,13 @@ $(function () {
             $("#best-places, .breadcrumbs1_wrapper, .page-numbers-wrapper, #our-team, .what-client-say-about").remove();
             /* Seccion Rooms */
             await getGallery(lng);
+        }
+        return {lng, path}
+    })
+    /* Valido vista detalle */
+    .then(async ({lng, path}) => {
+        if(lng.website.detailPage == path){
+            await viewDetail(lng);
         }
         return {lng, path}
     })

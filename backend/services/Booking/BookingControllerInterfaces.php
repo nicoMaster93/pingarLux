@@ -68,5 +68,33 @@
             */
             public function getAllProfiles();
             
+            /**
+             * @api {GET} endpoint=Booking&action=getAllImages Obtener Imagenes
+             * @apiName Get Booking
+             * @apiGroup Booking
+             * @apiDescription Descripcion del servicio
+             *
+             * @apiHeader {String} key Description
+             *
+             *
+             
+             * @apiSuccessExample {json} Respuesta Exitosa:
+             *     HTTP/1.1 200 OK
+             *     {
+             *        "code": 200,
+             *        "message": "",
+             *        "result": [...]
+             *      }
+             * 
+             * @apiErrorExample {json} Respuesta de Error:
+             *     HTTP/1.1 500 Internal Server Error
+             *     {
+             *        "code": 500,
+             *        "message": "Error en el servidor.",
+             *        "result": []
+             *      }
+            */
+            public function getAllImages();
+            
         }
          ?>

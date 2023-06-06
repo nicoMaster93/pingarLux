@@ -131,3 +131,86 @@ if($(`#teamList`).length > 0){
 }
 return true;
 }
+async function getBannerHome(lng){
+  if($(`#slides ul.slides-container`).length > 0){
+    const endPoint = "endpoint=Booking&action=getAllImages";
+    const lenguage = {}
+    const images = await (new service()).get(endPoint , lenguage);
+    if(images.code == 200){
+        const data = images.result;
+        /* Renderizo perfiles */
+        data.map((k,i) => {
+          const img = lng.website.api + k;
+          const slide = `<li>
+                            <img src="${img}" alt="" class="img">
+                        </li>`;
+          $(`#slides ul.slides-container`).append(slide);
+        });
+    }
+    return images;
+  }
+  return false;
+}
+
+async function viewDetail(lng){
+  /* obtengo referencia de producto */
+  const hotels = JSON.parse( db.get('products') );
+  const id = window.location.search.split('?')[1];
+  let hotel = hotels.filter( k => k.id === id )
+  if(hotel){
+    hotel = hotel[0];
+    let tmpBookingDetail = $(`#root`).html();   
+    /* Renderizamos el contenido con la seleccion */
+    let renderHTML = renderHtml(tmpBookingDetail, hotel, /\[\[(.*?)\]\]/g);
+    
+    /* Agrego lo que incluye cada alojamiento */
+    let pictures = hotel.pictures.map((inc) => {
+      return `<div class="our-rooms-icon">
+                  <figure><img src="images/${inc.icon}" alt="" class="img-fluid"></figure>
+                  <div class="our-rooms-icon-txt1">${inc.text}</div>
+                  <div class="our-rooms-icon-txt2">INCLUDES</div>
+              </div>`
+    });
+    let sliderItem = [];
+    let sliderItemInner = [];
+    for (let index = 0; index < hotel.pictures.length; index++) {
+      let elm = lng.website.api + hotel.pictures[index];
+      /* Imagen ampliada */
+      const htmlItem = `<div class="slider-item">
+                          <img src="${elm}" alt="" class="img-fluid">
+                      </div>`;
+      /* Agreggo navegacion de imagenes mini */
+      const htmlItemInner = `<div class="slider-item">
+                                <div class="slider-item-inner">
+                                    <img src="${elm}" alt="" class="img-fluid">
+                                </div>
+                            </div>`;
+                            
+      sliderItem.push(htmlItem);
+      sliderItemInner.push(htmlItemInner);
+      
+    }
+    renderHTML = renderHTML.replace('__REPLACE_GALLERY__', sliderItem.join("\n"));
+    renderHTML = renderHTML.replace('__REPLACE_GALLERY__', sliderItemInner.join("\n"));
+    
+    /* Agrego lo que incluye cada alojamiento */
+    let includesG = hotel.includes.map((inc) => {
+      return `<div class="our-rooms-icon">
+                  <figure><img src="images/${inc.icon}" alt="" class="img-fluid"></figure>
+                  <div class="our-rooms-icon-txt1">${inc.text}</div>
+                  <div class="our-rooms-icon-txt2">INCLUDES</div>
+              </div>`
+    });
+    renderHTML = renderHTML.replace('__REPLACE_INCLUDES__', includesG.slice(0,4).join("\n"));
+    renderHTML = renderHTML.replace('__REPLACE_INCLUDES__', includesG.slice(4,8).join("\n"));
+
+    /* Agrego las estrellas de cada alojamiento */
+    let stars = [];
+    for (let index = 0; index < hotel.stars; index++) {
+      stars.push(`<i class="fa fa-star"></i>`);
+    }
+    renderHTML = renderHTML.replace('__REPLACE_STARS__', stars.join("\n"));
+    /* Renderizo la vista nuevamente */
+    $(`#root`).length > 0 && $(`#root`).html(renderHTML);
+  }
+}

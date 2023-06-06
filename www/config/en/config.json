@@ -1,97 +1,100 @@
 {
-    "website":{
-        "api":"http://localhost/proyectsInHouse/JP/backend",
-        "viewsAllowed" : [
+    "website": {
+        "api": "http://localhost/proyectsInHouse/JP/backend",
+        "viewsAllowed": [
             "index",
             "about",
             "rooms",
             "contacts",
             "details"
         ],
-        "bookingPage" : ["rooms"],
-        "bookingFormPage" : ["index","rooms"],
-        "homePage" : "index",
-        "socials" : {
-            "facebook" : "https://www.facebook.com",
-            "twitter" : "https://twitter.com", 
-            "instagram" : "https://www.instagram.com"
+        "bookingPage": ["rooms"],
+        "bookingFormPage": ["index", "rooms","details"],
+        "homePage": "index",
+        "detailPage": "details",
+        "socials": {
+            "facebook": "https://www.facebook.com",
+            "twitter": "https://twitter.com",
+            "instagram": "https://www.instagram.com"
         }
     },
-
-    "menu":{
-        "home" : "Home",
-        "about" : "About us",
-        "rooms" : "Bookings",
-        "contact" : "Contact"
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "rooms": "Rooms",
+        "contact": "Contact",
+        "details": "Details"
     },
-    
-    "countries":{
+    "countries": {
         "selected": "usa",
-        "list":{
-            "usa" : {
+        "list": {
+            "usa": {
                 "label": "English (USA)",
                 "flag": "images/flags/us.png",
                 "path": "en"
             },
-            "col" : {
+            "col": {
                 "label": "Spanish (COL)",
                 "flag": "images/flags/co.png",
                 "path": "es"
             }
         }
     },
-
-    "pages":{
+    "pages": {
         "home": {
-            "clients":{
-                "title": "WHAT CLIENT SAY",
-                "description": "These are the comments of our clients, in their stays with us"
+            "clients": {
+                "title": "WHAT OUR CLIENTS SAY",
+                "description": "These are some comments from our satisfied clients during their stay at our luxury accommodations. We invite you to join them and enjoy an unforgettable experience with us!"
             }
         },
         "about": {
-            "title": "LITTLE ABOUT US",
-            "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
+            "title": "DISCOVER OUR PASSION FOR HOSPITALITY",
+            "description": "At our company, we are passionate about providing our guests with an exceptional experience. From the comfort of our luxury rooms to the personalized attention from our team, we strive to exceed all expectations. Come and discover why we are the perfect choice for your stay!",
             "slider": {
                 "one": {
-                    "image" :"images/about01.jpg",
-                    "info" : {
-                        "title": "Lorem ipsum dodor sit amet concateur, patrulo del suno lacrimosa.",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam sodales blandit faucibus. Nunc finibus, mi in tincidunt aliquet, ex orci venenatis arcu, inibus, mi in lore ipsum dolor.\nQuis.consequatnc neque et ex. Ut quis dictum ligula. Morbi porttitor mi id metus mollis. Sed dictum ligula finibus, mi in lore ipsum dolor. Morbi porttitor mi id metus mollis. Sed dictum ligula mi id metus msed dictum ligula nibus fbus, mi in lore ipsum dolor.",
+                    "image": "images/gallery03.jpg",
+                    "info": {
+                        "title": "EXCELLENCE IN HOSPITALITY",
+                        "description": "At our hotel, we believe in providing exceptional service to each of our guests. Our dedicated team will ensure that your stay is unforgettable and filled with special moments. We invite you to discover excellence in hospitality with us!",
                         "author": "Juliana Pinzón",
                         "occupation": "ADMIN"
                     }
                 },
                 "two": {
-                    "image" :"images/about02.jpg",
-                    "info" : {
-                        "title": "Lorem ipsum dodor sit amet concateur, patrulo del suno lacrimosa.",
-                        "description": "Morem ipsum dolor sit amet, consectetur adipiscing elit. aliquam sodales blandit faucibus. Nunc finibus, mi in tincidunt aliquet, ex orci venenatis arcu, inibus, mi in lore ipsum dolor.\nAuis.consequatnc neque et ex. Ut quis dictum ligula. Morbi porttitor mi id metus mollis. Sed dictum ligula finibus, mi in lore ipsum dolor. Morbi porttitor mi id metus mollis. Sed dictum ligula mi id metus mollised dictum ligula nibus finibus, mi in lore ipsum dolor.",
+                    "image": "images/gallery08.jpg",
+                    "info": {
+                        "title": "LUXURY AND COMFORT",
+                        "description": "Discover a world of luxury and comfort in our exclusive accommodations. Every detail has been carefully selected to offer you a unique experience. From our top-notch facilities to our stunning views, we are committed to your total satisfaction. Come and live the luxury with us!",
                         "author": "SILIBISTRO KARKASHADZE",
                         "occupation": "MANAGER"
                     }
                 }
             },
-            "team":{
-                "title": "Our Team",
-                "subtitle": "meet expert",
-                "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada"
+            "team": {
+                "title": "OUR TEAM",
+                "subtitle": "MEET OUR EXPERTS",
+                "description": "Behind every exceptional experience is an exceptional team. Our team of passionate and dedicated professionals is ready to provide you with personalized service and ensure that you make the most of your stay. Get to know our experts and be amazed!"
             }
         },
         "contact": {
             "title": "CONTACT INFORMATION",
-            "description": "Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
+            "description": "We would love to hear from you! If you have any questions, comments, or special requests, please don't hesitate to get in touch with us. Our friendly customer service team is available 24/7 to assist you with anything you need. We look forward to hearing from you!",
             "form": {
                 "title": "CONTACT FORM",
                 "name": "Name",
                 "email": "Email",
                 "comment": "Comments",
-                "button": "Send your message"
+                "button": "Send Message"
             },
             "info": {
-                "present": "KEEP IN TOUCH",
-                "title": "Pingar Lix Address",
-                "titleSmall": "Veteran owned & operated",
-                "address": "122 South City, Gridgum street\n NY 12099, United States",
+                "present": "STAY IN TOUCH",
+                "title": "Pingar Lux Address",
+                "titleSmall": "Veteran Owned & Operated",
+                "location": {
+                    "address": "122 South City, Gridgum Street\n NY 12099, United States",
+                    "lat": "40.7080026",
+                    "lng": "-73.7212941"
+                },
                 "tel": {
                     "label": "Call:",
                     "value": "+1 (368) 1234567"
@@ -103,25 +106,31 @@
             }
         },
         "rooms": {
-            "description":"Lorem ipsum dolor sit amet concateur non troppo di saronno la prada",
-            "seeDetails":"See Room Details",
-            "selectDetails":"SELECT THIS ROOM",
-            "typeCost":"PER NIGTH",
+            "description": "Discover comfort and elegance in our spacious lodgings. Each one of them has been carefully designed to offer you a relaxing and welcoming environment, where you can rest and rejuvenate. With a variety of options to suit your needs, we recommend finding the perfect accommodation for your stay.",
+            "seeDetails": "See Details",
+            "selectDetails": "SELECT THIS",
+            "typeCost": "PER NIGHT",
             "deposit": {
-                "label" : "DEPOSIT",
-                "value" : "REQUIRED 30%"
-            }
+                "label": "DEPOSIT",
+                "value": "REQUIRED 30%"
+            },
+            "reserve": "Reserve "
         },
-        "footer":{
-            "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum, ex at convallis interdum, <br>justo lectus posuere nulla, at consequat odio mauris quis sem. "
+        "footer": {
+            "description": "At our hotel, we take pride in offering our guests a unique and memorable experience. Our goal is to provide exceptional service and ensure that you feel at home during your stay. Thank you for choosing us, and we look forward to welcoming you soon!"
+        },
+        "404":{
+            "title":"<span>OPPS!</span> THIS PAGE COULD NOT BE FOUND!",
+            "description":"Sorry but the page you are looking for does not exist has changed name or been removed",
+            "button":"go to homepage"
         }
     },
-
-    "formBooking":{
+    "formBooking": {
         "button": "CHECK AVAILABILITY",
-        "checkin": "Check in",
-        "checkout": "Check out",
+        "checkin": "Check-in",
+        "checkout": "Check-out",
         "adults": "Adults",
-        "children": "Children"
+        "children": "Children",
+        "email": "Email"
     }
 }

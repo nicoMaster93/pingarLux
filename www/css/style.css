@@ -405,7 +405,7 @@ transition: all 0.3s ease-out;
 .slider-nav2{position: absolute; right: 5px; top: 5px;}
 .slider-nav2 .slick-list{overflow: visible;}
 .slider-nav2 .slider-item{outline: none; float: none; border: none; padding-bottom: 23px;}
-.slider-nav2 .slider-item .slider-item-inner{position: relative;}
+.slider-nav2 .slider-item .slider-item-inner{max-width: 135px;position: relative;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
 .slider-nav2 .slider-item img{border: 15px solid #fff; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); width: 100%;
 transition: all 0.3s ease-out;
 }
@@ -540,6 +540,7 @@ transition: all 0.3s ease-out;
 .form1 .col1{float: left; width: 23%;}
 .form1 .col2{float: left; width: 12%;}
 .form1 .col3{float: left; width: 18%;}
+.form1 .col4{float: left; width: 17%;}
 
 .form1 .c1{border-right: 1px solid #dddddd;}
 .form1 .c2{border-right: 1px solid #dddddd;}
@@ -559,10 +560,12 @@ transition: all 0.3s ease-out;
 .btn-form1-submit:focus{outline: none;}
 .btn-form1-submit:after{content: ''; display: block; width: 1px; height: 100%; position: absolute; left: 100%; top: 0; background: inherit;}
 
-.input1_inner{position: relative; position: relative;}
-.input1_inner:after{content: ''; display: block; position: absolute; right: 30px; top: 25px; pointer-events: none; content: "\f073"; font-family: "FontAwesome"; font-size: 15px; color: #f3ac00; line-height: 1;}
-.input1_inner input{display: block; width: 100%; font-size: 13px; color: #333333; padding: 23px 50px 23px 30px; background: none; border: none; box-shadow: none; border-radius: 0;}
-.input1_inner input:focus{outline: none; box-shadow: none;}
+.input1_inner, .input1_inner-mail{position: relative; position: relative;}
+.input1_inner:after, .input1_inner-mail:after{content: ''; display: block; position: absolute; right: 30px; top: 25px; pointer-events: none; content: "\f073"; font-family: "FontAwesome"; font-size: 15px; color: #f3ac00; line-height: 1;}
+.input1_inner input, .input1_inner-mail input{display: block; width: 100%; font-size: 13px; color: #333333; padding: 23px 50px 23px 30px; background: none; border: none; box-shadow: none; border-radius: 0;}
+.input1_inner input:focus, .input1_inner-mail input:focus{outline: none; box-shadow: none;}
+
+.input1_inner-mail:after{content: ''; display: block; position: absolute; right: 30px; top: 25px; pointer-events: none; content: "\f003"; font-family: "FontAwesome"; font-size: 15px; color: #f3ac00; line-height: 1;}
 
 .select1_wrapper{margin-bottom: 0;}
 

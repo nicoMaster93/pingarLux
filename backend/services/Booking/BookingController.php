@@ -96,6 +96,39 @@
                     return $this->response([],500,$e->getMessage());
                 }
             }
+            public function getAllImages(){ 
+                try{
+                    /* Se agregan al arreglo los parametros requeridos para el funcionamiento del metodo */
+                    /* optional_vars => Campos por lo cual se desea filtrar */
+                    $paramRequired = array();
+                    $validMethods = ["GET"];
+                    $erno = self::validParameters("getAllImages",$paramRequired,"Obtiene el listado de imagenes para el Banner");
+                    // validacion de parametros
+                    $success = false;
+                    if($erno["error"]){
+                        throw new Exception($erno["msj"], 1);
+                    }elseif(!in_array($this->params["requestMethod"],$validMethods)){
+                        throw new Exception("El Método HTTP es incorrecto \nMétodos http request admitidos [" . implode(",", $validMethods) ."]", 1);
+                    }else{
+
+                        $file  = __DIR__ . "/../../setupSupplies/en/accommodations.json";
+                        $data = json_decode(file_get_contents($file),true ) ;
+                        $images = [];
+                        foreach ($data as $key => $value) {
+                            $images = array_merge($images, $value["pictures"]);
+                        }
+
+                        if(count($images)>0){
+                            return $this->response($images,200);
+                        }else{
+                            return $this->response($images,400,"No hay registros");
+                        }
+                    }
+
+                }catch(Exception $e) {
+                    return $this->response([],500,$e->getMessage());
+                }
+            }
             
             /**
             * Fin de los métodos públicos
