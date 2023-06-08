@@ -1,6 +1,9 @@
 <?php
 class classBD extends Database{
-	
+	private $dot;
+	function __construct(){
+		$this->dot = $this->getEnv("DOT") ??  "?";
+	}
 	function uuid(){
 		try{
 				$sql = 'SELECT UUID()';
@@ -49,7 +52,7 @@ class classBD extends Database{
 				if(isset($condicion['condition']) && !empty($condicion['condition'][0])){
 					$conditions =  ["WHERE",$condicion['condition'][0]];
 					$conditions = implode(" ", $conditions);
-					$countConditions = substr_count($condicion['condition'][0],DOT);
+					$countConditions = substr_count($condicion['condition'][0], $this->dot );
 					array_shift($condicion['condition']);
 					if(count($condicion['condition']) != $countConditions){
 						throw new Exception("Error en la condicion de la consulta ", 1);

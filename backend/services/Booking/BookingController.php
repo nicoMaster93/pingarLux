@@ -129,6 +129,93 @@
                     return $this->response([],500,$e->getMessage());
                 }
             }
+            public function checkAvailability(){ 
+                try{
+                    /* Se agregan al arreglo los parametros requeridos para el funcionamiento del metodo */
+                    /* optional_vars => Campos por lo cual se desea filtrar */
+                    $paramRequired = array(
+                        "fechaIni" => "Fecha Ingreso",
+                        "fechaEnd" => "Fecha Salida",
+                        "adults" => "Adultos",
+                        "children" => "Niños",
+                        "email" => "Correo del interesado",
+                    );
+                    $validMethods = ["GET"];
+                    $erno = self::validParameters("getAllImages",$paramRequired,"Obtiene el listado de imagenes para el Banner");
+                    // validacion de parametros
+                    $success = false;
+                    if($erno["error"]){
+                        throw new Exception($erno["msj"], 1);
+                    }elseif(!in_array($this->params["requestMethod"],$validMethods)){
+                        throw new Exception("El Método HTTP es incorrecto \nMétodos http request admitidos [" . implode(",", $validMethods) ."]", 1);
+                    }else{
+                        $to = "nico.hernandez093@gmail.com";
+                        $from = $this->params["email"];
+                        $subject = "Informacíon nueva de contácto";
+                        $body = "
+                                    <p>Se ha registrado una nueva solicitud de contácto Fecha <b>".date("Y-m-d H:i")."</b></p>\n
+                                    <ol>
+                                    <li><b>Nombre</b> {$this->params["name_contact"]}</li>
+                                    <li><b>Email</b> {$this->params["email_contact"]}</li>
+                                    </ol>\n
+                                    <p><b>Comentario</b></p>\n
+                                    <p>{$this->params["comment_contact"]}</p>
+                                ";
+                        $email = $this->sendEmail($to, $from, $subject, $body);
+                        if($email){
+                            return $this->response([$email],200, "Se envió el correo correctamente");
+                        }else{
+                            return $this->response([$email],400,"Error en el envío del formulario");
+                        }
+                    }
+
+                }catch(Exception $e) {
+                    return $this->response([],500,$e->getMessage());
+                }
+            }
+            public function sendContactInformation(){ 
+                try{
+                    /* Se agregan al arreglo los parametros requeridos para el funcionamiento del metodo */
+                    /* optional_vars => Campos por lo cual se desea filtrar */
+                    $paramRequired = array(
+                        "name_contact" => "Nombre",
+                        "email_contact" => "Correo del contacto",
+                        "comment_contact" => "Comentario",
+                    );
+
+                    $validMethods = ["POST"];
+                    $erno = self::validParameters("sendContactInformation",$paramRequired,"Envia formulario de contáctanos");
+                    // validacion de parametros
+                    $success = false;
+                    if($erno["error"]){
+                        throw new Exception($erno["msj"], 1);
+                    }elseif(!in_array($this->params["requestMethod"],$validMethods)){
+                        throw new Exception("El Método HTTP es incorrecto \nMétodos http request admitidos [" . implode(",", $validMethods) ."]", 1);
+                    }else{
+                        $to = $this->env("EMAIL_WEBSITE_ADMIN");
+                        $from = $this->env("EMAIL_WEBSITE");
+                        $subject = "Informacíon nueva de contácto";
+                        $body = "
+                                    <p>Se ha registrado una nueva solicitud de contácto Fecha <b>".date("Y-m-d H:i")."</b></p>\n
+                                    <ol>
+                                    <li><b>Nombre</b> {$this->params["name_contact"]}</li>
+                                    <li><b>Email</b> {$this->params["email_contact"]}</li>
+                                    </ol>\n
+                                    <p><b>Comentario</b></p>\n
+                                    <p>{$this->params["comment_contact"]}</p>
+                                ";
+                        $email = $this->sendEmail($to, $from, $subject, $body);
+                        if($email){
+                            return $this->response([$email],200, "Se envió el correo correctamente");
+                        }else{
+                            return $this->response([$email],400,"Error en el envío del formulario");
+                        }
+                    }
+
+                }catch(Exception $e) {
+                    return $this->response([],500,$e->getMessage());
+                }
+            }
             
             /**
             * Fin de los métodos públicos

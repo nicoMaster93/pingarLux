@@ -18,6 +18,7 @@ backend/serviceGenerated.php
 backend/apiDoc.json
 backend/apiDoc-develop.json
 backend/example-documentation
+backend/docs
 
 # Variables de entorno
 backend/.env
