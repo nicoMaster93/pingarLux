@@ -63,3 +63,36 @@ La documentación de la API se encuentra en el folder docs y puede ser vista abr
 
 La documentación incluye información sobre los endpoints de la API, sus parámetros y respuestas, y ejemplos de uso. Además, se incluyen descripciones adicionales para los endpoints y los parámetros de entrada.
 ```
+
+Ejemplo de como se debe documentar una funcion que se va exponer como un servicio en internet
+
+```
+  /**
+    * @api {POST} endpoint=Publish&action=loguin Loguin
+    * @apiName loguin
+    * @apiGroup Users
+    * @apiDescription Descripcion del servicio
+    *
+    * @apiHeader {String} key Description
+    *
+    * @apiParam {String} key Description
+    *
+
+    * @apiSuccessExample {json} Respuesta Exitosa:
+    *     HTTP/1.1 200 OK
+    *     {
+    *        "code": 200,
+    *        "message": "",
+    *        "result": ["Se actualizó correctamente"]
+    *      }
+    *
+    * @apiErrorExample {json} Respuesta de Error:
+    *     HTTP/1.1 500 Internal Server Error
+    *     {
+    *        "code": 500,
+    *        "message": "Error en el servidor.",
+    *        "result": []
+    *      }
+  */
+
+```

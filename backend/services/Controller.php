@@ -250,7 +250,6 @@
 
             protected function formatBodyEmail($body){
                 $i = rand(6,11);
-                $texto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus odit ducimus nesciunt mollitia repellat, fuga vitae molestias quis id! Ut quo alias sed repellat sit itaque quidem corporis, vitae labore.";
                 $urlBase = $this->env("CLIENTE_URL") . "/backend/";
                 $template = str_replace(
                     ["[TEXTO]","[RAND]","[VERSION]","[BASE_URL]"],
@@ -300,7 +299,7 @@
                 }
                 $multipart_message .= "--boundary--\r\n";
                 // Envía el correo electrónico
-                $this->logs([$to, $subject, $multipart_message, $headers]);
+                // $this->logs([$to, $subject, $multipart_message, $headers]);
                 if($this->env("MODE_ENV") == "develop"){
                     return true;
                 }
@@ -313,7 +312,7 @@
             protected function env($key){
                 return $_ENV[$key];
             }
-            protected function generateUUID() {
+            protected function uuid() {
                 $uuid = md5(uniqid('', true) . time());
                 return sprintf(
                     '%s-%s-%s-%s-%s',

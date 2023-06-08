@@ -134,14 +134,16 @@
                     /* Se agregan al arreglo los parametros requeridos para el funcionamiento del metodo */
                     /* optional_vars => Campos por lo cual se desea filtrar */
                     $paramRequired = array(
+                        "lng" => "Lenguaje",
                         "fechaIni" => "Fecha Ingreso",
                         "fechaEnd" => "Fecha Salida",
                         "adults" => "Adultos",
                         "children" => "Niños",
-                        "email" => "Correo del interesado",
+                        "email" => "Correo del interesado"
                     );
-                    $validMethods = ["GET"];
-                    $erno = self::validParameters("getAllImages",$paramRequired,"Obtiene el listado de imagenes para el Banner");
+
+                    $validMethods = ["POST"];
+                    $erno = self::validParameters("checkAvailability",$paramRequired,"Valida disponibilidad de reservacion");
                     // validacion de parametros
                     $success = false;
                     if($erno["error"]){
@@ -149,24 +151,49 @@
                     }elseif(!in_array($this->params["requestMethod"],$validMethods)){
                         throw new Exception("El Método HTTP es incorrecto \nMétodos http request admitidos [" . implode(",", $validMethods) ."]", 1);
                     }else{
-                        $to = "nico.hernandez093@gmail.com";
-                        $from = $this->params["email"];
-                        $subject = "Informacíon nueva de contácto";
-                        $body = "
-                                    <p>Se ha registrado una nueva solicitud de contácto Fecha <b>".date("Y-m-d H:i")."</b></p>\n
-                                    <ol>
-                                    <li><b>Nombre</b> {$this->params["name_contact"]}</li>
-                                    <li><b>Email</b> {$this->params["email_contact"]}</li>
-                                    </ol>\n
-                                    <p><b>Comentario</b></p>\n
-                                    <p>{$this->params["comment_contact"]}</p>
-                                ";
-                        $email = $this->sendEmail($to, $from, $subject, $body);
-                        if($email){
-                            return $this->response([$email],200, "Se envió el correo correctamente");
-                        }else{
-                            return $this->response([$email],400,"Error en el envío del formulario");
+
+                        if(strtotime($this->params["fechaEnd"]) < strtotime($this->params["fechaIni"])){
+                            throw new Exception("La fecha de Salida debe ser mayor que la reservación", 1);
+                        }else if(strtotime($this->params["fechaIni"]) < strtotime("now")){
+                            throw new Exception("La fecha de reservación debe ser mayor al día actual", 1);
                         }
+                        
+                        $file  = __DIR__ . "/../../setupSupplies/booking/booking.json";
+                        $data = json_decode(file_get_contents($file),true ) ;
+                        
+                        $data[] = [
+                            "id" => $this->uuid(),
+                            "fechaIni" => $this->params["fechaIni"],
+                            "fechaEnd" => $this->params["fechaEnd"],
+                            "adults" => $this->params["adults"],
+                            "children" => $this->params["children"],
+                            "email" => $this->params["email"],
+                            "lng" => $this->params["lng"] ?? "en"
+                        ];
+
+                        if(file_put_contents($file, json_encode( $data, JSON_PRETTY_PRINT) )){
+                            
+                            $to = $this->env("EMAIL_WEBSITE_ADMIN");
+                            $from = $this->env("EMAIL_WEBSITE");
+                            $subject = "Informacíon Disponibilidad de Reservación";
+                            $body = "
+                                    <p><b>Fecha:  ".date("Y-m-d H:i")."</b></p>
+                                    <p>Se ha registrado una nueva solicitud de reservación</p>\n
+                                    <dl>
+                                        <dt><b>Email</b></dt>
+                                        <dt>{$this->params["email"]}</dt>
+                                        <dt><b>Adultos: </b> {$this->params["adults"]} | <b>Niños: </b>{$this->params["children"]}</dt>
+                                        <dt><b>Check In: </b> {$this->params["fechaIni"]} | <b>Check out: </b>{$this->params["fechaEnd"]}</dt>
+                                    </dl>
+                                    ";
+                            $email = $this->sendEmail($to, $from, $subject, $body);
+                            if($email){
+                                return $this->response([$email],200, "Se envió el correo correctamente");
+                            }else{
+                                return $this->response([$email],400,"Error en el envío del formulario");
+                            }
+                        }
+
                     }
 
                 }catch(Exception $e) {
@@ -178,6 +205,7 @@
                     /* Se agregan al arreglo los parametros requeridos para el funcionamiento del metodo */
                     /* optional_vars => Campos por lo cual se desea filtrar */
                     $paramRequired = array(
+                        "lng" => "Lenguaje Seleccionado",
                         "name_contact" => "Nombre",
                         "email_contact" => "Correo del contacto",
                         "comment_contact" => "Comentario",
@@ -196,13 +224,15 @@
                         $from = $this->env("EMAIL_WEBSITE");
                         $subject = "Informacíon nueva de contácto";
                         $body = "
-                                    <p>Se ha registrado una nueva solicitud de contácto Fecha <b>".date("Y-m-d H:i")."</b></p>\n
-                                    <ol>
-                                    <li><b>Nombre</b> {$this->params["name_contact"]}</li>
-                                    <li><b>Email</b> {$this->params["email_contact"]}</li>
-                                    </ol>\n
-                                    <p><b>Comentario</b></p>\n
-                                    <p>{$this->params["comment_contact"]}</p>
+                                <p><b>Fecha:  ".date("Y-m-d H:i")."</b></p><p>Se ha registrado una nueva solicitud de contácto</p>\n
+                                <dl>
+                                    <dt><b>Nombre</b></dt>
+                                    <dd>{$this->params["name_contact"]}</dd>
+                                    <dt><b>Email</b></dt>
+                                    <dd>{$this->params["email_contact"]}</dd>
+                                </dl>\n
+                                <p><b>Comentario</b></p>\n
+                                <p>{$this->params["comment_contact"]}</p>
                                 ";
                         $email = $this->sendEmail($to, $from, $subject, $body);
                         if($email){

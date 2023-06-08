@@ -105,6 +105,7 @@
              * @apiParam {Number} adults Adultos
              * @apiParam {Number} children Niños
              * @apiParam {String} email Correo del interesado
+             * @apiParam {String} [lng] Idioma
              *
              *
              

@@ -27,6 +27,7 @@
                         justify-content: center;
                         border-radius: 5px;
                         box-shadow: 0px 4px 12px 0px #a59f6a;
+                        border: 1px solid #e6e3ca;
                     "
                 >
                     <div
