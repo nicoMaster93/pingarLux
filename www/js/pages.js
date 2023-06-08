@@ -75,8 +75,8 @@ async function getGallery(lng){
       k.descriptionmin = k.description.substring(0, 50) + "...";
       k.descriptionmiddle = k.description.substring(0, 250) + "...";
       /* Agrego dominio a las imagenes y selecciono imagen random */
-      const randomIdx = Math.floor(Math.random() * k.pictures.length);
-      k.pictureBase = lng.website.api + k.pictures[randomIdx];
+      k.pictureBase = lng.website.api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
+      k.pictureBase1 = lng.website.api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
 
       /* Agrego las estrellas de cada alojamiento */
       for (let index = 0; index < k.stars; index++) {
