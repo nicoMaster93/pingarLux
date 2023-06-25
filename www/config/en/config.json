@@ -52,21 +52,21 @@
             "description": "At our company, we are passionate about providing our guests with an exceptional experience. From the comfort of our luxury rooms to the personalized attention from our team, we strive to exceed all expectations. Come and discover why we are the perfect choice for your stay!",
             "slider": {
                 "one": {
-                    "image": "images/gallery03.jpg",
+                    "image": "images/gallery01.jpeg",
                     "info": {
                         "title": "EXCELLENCE IN HOSPITALITY",
-                        "description": "At our hotel, we believe in providing exceptional service to each of our guests. Our dedicated team will ensure that your stay is unforgettable and filled with special moments. We invite you to discover excellence in hospitality with us!",
+                        "description": "We believe in providing exceptional service to each of our guests. Our dedicated team will ensure that your stay is unforgettable and filled with special moments. We invite you to discover excellence in hospitality with us!",
                         "author": "Juliana Pinzón",
                         "occupation": "ADMIN"
                     }
                 },
                 "two": {
-                    "image": "images/gallery08.jpg",
+                    "image": "images/gallery02.jpeg",
                     "info": {
-                        "title": "LUXURY AND COMFORT",
-                        "description": "Discover a world of luxury and comfort in our exclusive accommodations. Every detail has been carefully selected to offer you a unique experience. From our top-notch facilities to our stunning views, we are committed to your total satisfaction. Come and live the luxury with us!",
-                        "author": "SILIBISTRO KARKASHADZE",
-                        "occupation": "MANAGER"
+                        "title": "OFFICE SPACE",
+                        "description": "We provide flex space largely driven by E-commerce consults, Travel nurse, and IT Engineers to name a few. In this date and time working from a vacation home is a way to keep mental health a main priority. While still fulfilling mission needs. !",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
                     }
                 }
             },
@@ -117,7 +117,7 @@
             "reserve": "Reserve "
         },
         "footer": {
-            "description": "At our hotel, we take pride in offering our guests a unique and memorable experience. Our goal is to provide exceptional service and ensure that you feel at home during your stay. Thank you for choosing us, and we look forward to welcoming you soon!"
+            "description": "We take pride in offering our guests a unique and memorable experience. Our goal is to provide exceptional service and ensure that you feel at home during your stay. Thank you for choosing us, and we look forward to welcoming you soon!"
         },
         "404":{
             "title":"<span>OPPS!</span> THIS PAGE COULD NOT BE FOUND!",

@@ -52,7 +52,7 @@
             "description": "En nuestra empresa, nos apasiona brindar a nuestros huéspedes una experiencia excepcional. Desde la comodidad de nuestras habitaciones de lujo hasta la atención personalizada de nuestro equipo, nos esforzamos por superar todas las expectativas. ¡Ven y descubre por qué somos la elección perfecta para tu estadía!",
             "slider": {
                 "one": {
-                    "image": "images/gallery03.jpg",
+                    "image": "images/gallery01.jpeg",
                     "info": {
                         "title": "EXCELENCIA EN HOSPITALIDAD",
                         "description": "En nuestros alojamientos, creemos en brindar un servicio excepcional a cada uno de nuestros huéspedes. Nuestro equipo dedicado se asegurará de que tu estadía sea inolvidable y llena de momentos especiales. ¡Te invitamos a descubrir la excelencia en hospitalidad con nosotros!",
@@ -61,7 +61,7 @@
                     }
                 },
                 "two": {
-                    "image": "images/gallery08.jpg",
+                    "image": "images/gallery02.jpeg",
                     "info": {
                         "title": "LUJO Y COMODIDAD",
                         "description": "Descubre un mundo de lujo y comodidad en nuestros exclusivos alojamientos. Cada detalle ha sido cuidadosamente seleccionado para ofrecerte una experiencia única. Desde nuestras instalaciones de primer nivel hasta nuestras impresionantes vistas, estamos comprometidos con tu satisfacción total. ¡Ven y vive el lujo con nosotros!",
