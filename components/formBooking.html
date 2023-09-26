@@ -1,0 +1,79 @@
+<form action="javascript:;" class="form1 clearfix" id="frmBooking">
+    <div class="col1 c1">
+        <div class="input1_wrapper">
+            <label>{{formBooking.email}}</label>
+            <div class="input1_inner-mail">
+                <input type="email" name="email" class="form-control input " placeholder="{{formBooking.email}}" required>
+            </div>
+        </div>
+    </div>
+    <div class="col3 c2">
+        <div class="input1_wrapper">
+            <label>{{formBooking.checkin}}</label>
+            <div class="input1_inner">
+                <input type="text" name="checkin" class="form-control input datepicker" placeholder="{{formBooking.checkin}}" required >
+            </div>
+        </div>
+    </div>
+    <div class="col3 c3">
+        <div class="input1_wrapper">
+            <label>{{formBooking.checkout}}</label>
+            <div class="input1_inner">
+                <input type="text" name="checkout" class="form-control input datepicker" placeholder="{{formBooking.checkout}}">
+            </div>
+        </div>
+    </div>
+    <div class="col2 c4">
+        <div class="select1_wrapper">
+            <label>{{formBooking.adults}}</label>
+            <div class="select1_inner">
+                <select class="select2 select" style="width: 100%" name="adults" required>
+                    <option value="">0 {{formBooking.adults}}</option>
+                    <option value="1">1 {{formBooking.adults}}</option>
+                    <option value="2">2 {{formBooking.adults}}</option>
+                    <option value="3">3 {{formBooking.adults}}</option>
+                    <option value="4">4 {{formBooking.adults}}</option>
+                    <option value="5">5 {{formBooking.adults}}</option>
+                    <option value="6">6 {{formBooking.adults}}</option>
+                    <option value="7">7 {{formBooking.adults}}</option>
+                    <option value="8">8 {{formBooking.adults}}</option>
+                    <option value="9">9 {{formBooking.adults}}</option>
+                    <option value="10">10 {{formBooking.adults}}</option>
+                    <option value="11">11 {{formBooking.adults}}</option>
+                    <option value="12">12 {{formBooking.adults}}</option>
+                    <option value="13">13 {{formBooking.adults}}</option>
+                    <option value="14">14 {{formBooking.adults}}</option>
+                    <option value="15">15 {{formBooking.adults}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col2 c5">
+        <div class="select1_wrapper">
+            <label>{{ formBooking.children }}</label>
+            <div class="select1_inner">
+                <select class="select2 select" style="width: 100%" name="children" required>
+                    <option value="0">0 {{ formBooking.children }}</option>
+                    <option value="1">1 {{ formBooking.children }}</option>
+                    <option value="2">2 {{ formBooking.children }}</option>
+                    <option value="3">3 {{ formBooking.children }}</option>
+                    <option value="4">4 {{ formBooking.children }}</option>
+                    <option value="5">5 {{ formBooking.children }}</option>
+                    <option value="6">6 {{ formBooking.children }}</option>
+                    <option value="7">7 {{ formBooking.children }}</option>
+                    <option value="8">8 {{ formBooking.children }}</option>
+                    <option value="9">9 {{ formBooking.children }}</option>
+                    <option value="10">10 {{ formBooking.children }}</option>
+                    <option value="11">11 {{ formBooking.children }}</option>
+                    <option value="12">12 {{ formBooking.children }}</option>
+                    <option value="13">13 {{ formBooking.children }}</option>
+                    <option value="14">14 {{ formBooking.children }}</option>
+                    <option value="15">15 {{ formBooking.children }}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col4 c6">
+        <button type="submit" class="btn-form1-submit">{{ formBooking.button }}</button>
+    </div>
+</form>

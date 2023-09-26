@@ -277,12 +277,12 @@
 
                 // Agrega los archivos adjuntos
                 if(!empty($files)){
-                    $files = array(
-                        "ruta/archivo1.jpg",
-                        "ruta/archivo2.zip",
-                        "ruta/archivo3.pdf",
-                        "ruta/archivo4.docx"
-                    );
+                    // $files = array(
+                    //     "ruta/archivo1.jpg",
+                    //     "ruta/archivo2.zip",
+                    //     "ruta/archivo3.pdf",
+                    //     "ruta/archivo4.docx"
+                    // );
                     foreach ($files as $file) {
                         $filename = basename($file);
                         $file_content = file_get_contents($file);

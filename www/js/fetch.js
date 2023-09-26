@@ -12,7 +12,7 @@ const service = class {
             headers: this.myHeaders,
             body: (json ? JSON.stringify(data) : data ),
             withCredentials: true,  
-            crossorigin: true,  
+            // crossorigin: true,  
         };
         if(method === 'GET'){
             delete requestOptions.body;

@@ -168,7 +168,7 @@ async function viewDetail(lng){
       return `<div class="our-rooms-icon">
                   <figure><img src="images/${inc.icon}" alt="" class="img-fluid"></figure>
                   <div class="our-rooms-icon-txt1">${inc.text}</div>
-                  <div class="our-rooms-icon-txt2">INCLUDES</div>
+                  <div class="our-rooms-icon-txt2">INCLUDED</div>
               </div>`
     });
     let sliderItem = [];

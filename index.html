@@ -3,9 +3,8 @@
 <head>
     <title>Pingar Lux</title>
     <meta charset="utf-8">
-    <base href="www/">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Poscionamiento CEO -->
     <meta id="meta-description" name="description" content="Reserva tu estadía en Orlando, Kissimmee y PineHills. Encuentra las mejores opciones de alojamiento y disfruta de una experiencia inolvidable en estos destinos turísticos.">
     <meta id="meta-keywords" name="keywords" content="reservaciones, Orlando, Kissimmee, PineHills, alojamiento, turismo">
@@ -16,7 +15,8 @@
     <meta property="og:image" content="https://luxpingar.com/www/images/logo1.png">
     <meta property="og:image:secure_url" content="https://luxpingar.com/www/images/logo1.png">
     <!-- Poscionamiento CEO -->
-
+    
+    
     <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -26,44 +26,33 @@
     <link href="css/smoothness/jquery-ui-1.10.0.custom.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
-    <link href="css/style.css?v=1" rel="stylesheet">
+    <link href="css/style.css?v=0001" rel="stylesheet">
 </head>
-<style>
-    @media screen and (max-width: 770px) {
-        .comming-soom{
-            width: 80%;
-            margin: auto;
-        }
-        figure img:nth-of-type(1){
-            display: none;
-        }
-    }
-    .row{
-        justify-content: center;
-    }
-</style>
 <body class="front" data-spy="scroll" data-target="#top-inner" data-offset="221">
-    <div class="comming-soom">
-        <div id="main" class="container">
-            <section class="row">
-                <article class="col6">
-                    <figure>
-                        <img src="images/our-rooms06.jpg" alt="">
-                        <img src="images/our-rooms07.jpg" alt="">
-                    </figure>
-                </article>
-                <article class="col6">
-                    <div class="info">
-                        <img src="images/logo.png" class="logo">
-                        <h1>Coming soon</h1>
-                        <a href="./">
-                            <img src="images/hearts.svg" width="100" alt="loader">
-                        </a>
-                        <p>We are working on our website. Stay tuned for some exciting updates.</p>
-                    </div>
-                </article>
-            </section>
+    <div id="main">
+        <div class="search-wrapper" id="search-website">
+            <!-- Se Carga el navbar dinamicamente -->
         </div>
+        <div class="top-wrapper" id="navbar">
+            <!-- Se Carga el navbar dinamicamente -->
+        </div>
+        <div id="root">
+            <!-- Carga la vista -->
+        </div>
+        <footer id="footer">
+            <!-- Contenido Dinamico -->
+        </footer>
+        <!-- Contenido Dinamico -->
     </div>
+    <div id="loader" class="loader-holder">
+        <div class="block"><img src="images/hearts.svg" width="100" alt="loader"></div>
+    </div>
+
+    
 </body>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false.js"></script>
+<script src="js/fetch.js?v=0001"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/pages.js?v=0001"></script>
+<script src="js/scripts.js?v=0001"></script>
 </html>

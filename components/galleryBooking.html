@@ -1,0 +1,46 @@
+<div class="col-lg-4">
+    <div class="room-wrapper">
+        <div class="room-inner">
+            <div class="room">
+                <figure>
+                    <img src="[[pictureBase]]" alt="" class="img-fluid">
+                    <figcaption>
+                        <div class="txt1">[[title]]</div>
+                        <div class="txt2">[[subtitle]]</div>
+                    </figcaption>
+                </figure>
+                <div class="caption">
+                    <div class="txt1">[[subtitle]]</div>
+                    <div class="txt2">
+                        [[views]]
+                        <div class="small-stars">
+                            __REPLACE_STARS__
+                        </div>
+                    </div>
+                    <div class="txt3 description-room">
+                        [[descriptionmin]]
+                    </div>
+                    <div class="txt4">
+                        <a href="details?[[id]]">
+                            {{pages.rooms.seeDetails}}<i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a> 
+                    </div>
+                </div>
+                <div class="select-txt">
+                    <a href="details?[[id]]">
+                        <span>
+                            {{pages.rooms.selectDetails}}<i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="room-icons">
+                    __REPLACE_INCLUDES__
+                    <div class="room-price">
+                        <div class="txt1">$<span>[[price]]</span></div>
+                        <div class="txt2">{{pages.rooms.typeCost}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

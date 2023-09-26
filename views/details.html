@@ -1,0 +1,76 @@
+<div class="breadcrumbs1_wrapper">
+    <div class="container">
+        <div class="breadcrumbs1"><a href="index.html">{{menu.home}}</a><span>|</span>{{menu.details}}</div>
+    </div>
+</div>
+<div id="content">
+    <div class="container">
+
+        <div class="title1">[[title]]</div>
+
+        <div class="title2">[[subtitle]]</div>
+
+        <div class="booking2-wrapper">
+            <div class="">
+                <div class="booking-inner clearfix" id="containerFormBooking">
+                    <!-- Contenido Dinamico -->
+                </div>
+            </div>
+        </div>
+
+        <div class="slider2-wrapper">
+            <div class="slider-for2">
+                __REPLACE_GALLERY__
+            </div>
+
+            <div class="slider-nav2">
+                __REPLACE_GALLERY__
+            </div>
+        </div>
+
+
+        <div class="details-wrapper clearfix">
+            <div class="txt1">
+                [[views]]
+                <div class="small-stars">
+                    __REPLACE_STARS__
+                </div>
+            </div>
+            <div class="txt2">[[subtitle]]</div>
+            <div class="txt3">
+                <p>
+                    [[ description ]]
+                </p>
+            </div>
+            <div class="details-caption">
+                <div class="txt1">01</div>
+                <div class="txt21">[[ subtitle ]]</div>
+            </div>
+        </div>
+
+        <div class="details2-wrapper">
+            <div class="row">
+                <div class="col-md-4">
+                    __REPLACE_INCLUDES__
+                </div>
+                <div class="col-md-4">
+                    __REPLACE_INCLUDES__
+                </div>
+                <div class="col-md-4">
+                    <div class="details2-info">
+                        <div class="check1">{{ pages.rooms.deposit.label }}: <span>{{ pages.rooms.deposit.value }}</span></div>
+                        <div>
+                            <a href="#containerFormBooking" class="details2-link">
+                                <div class="txt1">$[[price]] <span> TOTAL</span></div>
+                                <div class="txt2">{{ pages.rooms.reserve}}</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="google_map" data-map-lat="[[location.lat]]" data-map-lng="[[location.lng]]"></div>
+
+    </div>
+</div>

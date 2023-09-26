@@ -183,5 +183,36 @@ class classBD extends Database{
 			return false;
 		}
 	}
+	function insertarMultipleDataTable($tabla,$campos,$arayValores) {
+		try{
+			$sentenciaSql = "INSERT INTO `{$tabla}` (";
+			$sentenciaSql .= implode(",", $campos);
+			$sentenciaSql .= ") VALUES (";
+			$values = '';
+			for ($i=0; $i <count($arayValores) ; $i++) { 
+				$values .= $arayValores[$i]."),(";
+			}
+			$sentenciaSql .= substr($values, 0,-2);
+			$sql = $this->conn->prepare($sentenciaSql);
+			// print_r($sql);
+			$sql->execute();
+			return true;
+		}
+		catch(PDOException $e){
+			echo $e->getMessage();
+			return false;
+		}
+	}
+	function getMaxIdTable($tabla,$campoId){
+		try{
+				$sql = "SELECT max({$campoId}) as id FROM  {$tabla} ";
+				$row = $this->getDataTableBySql($sql);
+				return $row[0];
+			}
+			catch(PDOException $e){
+				echo $e->getMessage();
+				return false;
+			}
+	}
 }
 ?>

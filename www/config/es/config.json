@@ -21,7 +21,7 @@
     "menu": {
         "home": "Inicio",
         "about": "Acerca de",
-        "rooms": "Hospedajes",
+        "rooms": "Listado",
         "contact": "Contacto",
         "details": "Detalle"
     },
@@ -67,6 +67,15 @@
                         "description": "Descubre un mundo de lujo y comodidad en nuestros exclusivos alojamientos. Cada detalle ha sido cuidadosamente seleccionado para ofrecerte una experiencia única. Desde nuestras instalaciones de primer nivel hasta nuestras impresionantes vistas, estamos comprometidos con tu satisfacción total. ¡Ven y vive el lujo con nosotros!",
                         "author": "SILIBISTRO KARKASHADZE",
                         "occupation": "MANAGER"
+                    }
+                },
+                "three": {
+                    "image": "images/gallery02.jpeg",
+                    "info": {
+                        "title": "LUJO Y CONFORT",
+                        "description": "La pandemia realmente nos puso a prueba a las amas de casa. Nuestros equipos tuvieron que esforzarse continuamente más que nunca en limpiar y desinfectar las superficies para ayudar a detener la propagación de COVID-19. Todos nuestros listados superarán sus expectativas.",
+                        "author": "Julio Altamar",
+                        "occupation": "Crew member"
                     }
                 }
             },
