@@ -11,10 +11,11 @@ const storage = class {
 }
 const db = new storage();
 function loadScript(route){
+  let date = new Date()
   // Crear un elemento <script>
   var script = document.createElement('script');
   // Establecer la fuente del archivo JavaScript que deseas cargar
-  script.src = route;
+  script.src = route  + '?v=' + date.getTime();
   // Opcionalmente, puedes agregar atributos adicionales al elemento <script>
   script.type = 'text/javascript';
   // Esperar a que el archivo se cargue antes de ejecutar cierto código
@@ -42,15 +43,15 @@ function renderHtml(html, data,pattern=/{{(.*?)}}/g){
 }
 function fullScrips(){
   const scripts = [
+    "js/jquery-ui.js",
     "js/superfish.js",
+    "js/slick.js",
     "js/jquery.superslides.js",
     "js/jquery.fancybox.js",
     "js/jquery.sticky.js",
     "js/jquery.easing.1.3.js",
     "js/select2.js",
-    "js/jquery-ui.js",
     "js/owl.carousel.js",
-    "js/slick.js",
     "js/jquery.appear.js",
     "js/yjsg.yjsgroundprogress.js",
     "js/popper.min.js",

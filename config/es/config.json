@@ -55,7 +55,7 @@
                     "image": "images/gallery01.jpeg",
                     "info": {
                         "title": "EXCELENCIA EN HOSPITALIDAD",
-                        "description": "En nuestros alojamientos, creemos en brindar un servicio excepcional a cada uno de nuestros huéspedes. Nuestro equipo dedicado se asegurará de que tu estadía sea inolvidable y llena de momentos especiales. ¡Te invitamos a descubrir la excelencia en hospitalidad con nosotros!",
+                        "description": "Creemos en brindar un servicio excepcional a cada uno de nuestros huéspedes. Nuestro dedicado equipo se asegurará de que su estadía sea inolvidable y esté llena de momentos especiales. ¡Te invitamos a descubrir la excelencia en hospitalidad con nosotros!",
                         "author": "Juliana Pinzón",
                         "occupation": "ADMIN"
                     }
@@ -63,10 +63,10 @@
                 "two": {
                     "image": "images/gallery02.jpeg",
                     "info": {
-                        "title": "LUJO Y COMODIDAD",
-                        "description": "Descubre un mundo de lujo y comodidad en nuestros exclusivos alojamientos. Cada detalle ha sido cuidadosamente seleccionado para ofrecerte una experiencia única. Desde nuestras instalaciones de primer nivel hasta nuestras impresionantes vistas, estamos comprometidos con tu satisfacción total. ¡Ven y vive el lujo con nosotros!",
-                        "author": "SILIBISTRO KARKASHADZE",
-                        "occupation": "MANAGER"
+                        "title": "ESPACIO DE OFICINA",
+                        "description": "Brindamos espacio flexible impulsado en gran medida por consultas de comercio electrónico, enfermeras de viajes e ingenieros de TI, por nombrar algunos. En esta fecha y hora, trabajar desde una casa de vacaciones es una forma de mantener la salud mental como una prioridad principal. Sin dejar de cumplir con las necesidades de la misión.",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
                     }
                 },
                 "three": {

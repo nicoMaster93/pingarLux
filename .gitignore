@@ -5,7 +5,6 @@ backend/conexion/.ini
 backend/conexion/prod.ini
 
 # Base de datos 
-backend/brenntag.sql
 
 # Generador de servicios
 backend/serviceGenerated.php
@@ -28,3 +27,4 @@ backend/.env.prod
 # archivos de prueba
 backend/test.php
 www/_index.php
+www/
