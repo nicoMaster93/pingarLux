@@ -1,6 +1,7 @@
 {
     "website": {
-        "api": "http://localhost/proyectsInHouse/JP/backend",
+        "api": "https://luxpingar.com/backend",
+        "apiDev": "http://localhost/proyectsInHouse/JP/backend",
         "viewsAllowed": [
             "index",
             "about",
