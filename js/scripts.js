@@ -120,7 +120,7 @@ $(function () {
     })
     /* Cargamos el script de eventos y quitamos el loader */
     .then(({lng, path}) => {
-        fullScrips()
+        loadEvents()
         /* Mostramos la página */
         jQuery( "#loader" ).delay( 2000 ).fadeOut( 300 );
         return {lng, path}

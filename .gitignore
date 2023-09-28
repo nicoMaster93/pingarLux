@@ -1,8 +1,5 @@
 backend/logs/
 
-# Variable de entorno
-backend/conexion/.ini
-backend/conexion/prod.ini
 
 # Base de datos 
 

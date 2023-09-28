@@ -10,6 +10,8 @@ const storage = class {
   }
 }
 const db = new storage();
+
+
 function loadScript(route){
   let date = new Date()
   // Crear un elemento <script>
@@ -24,9 +26,7 @@ function loadScript(route){
       console.log('Archivo JavaScript cargado correctamente');
   };
   // Añadir el elemento <script> al documento
-  setTimeout(() => {
-    document.body.appendChild(script);
-  }, 200);
+  document.head.appendChild(script);
 }
 function renderHtml(html, data,pattern=/{{(.*?)}}/g){
   return html.replace(pattern, (match, key) => {
@@ -41,22 +41,8 @@ function renderHtml(html, data,pattern=/{{(.*?)}}/g){
       return value;
   });
 }
-function fullScrips(){
+function loadEvents(){
   const scripts = [
-    "js/jquery-ui.js",
-    "js/superfish.js",
-    "js/slick.js",
-    "js/jquery.superslides.js",
-    "js/jquery.fancybox.js",
-    "js/jquery.sticky.js",
-    "js/jquery.easing.1.3.js",
-    "js/select2.js",
-    "js/owl.carousel.js",
-    "js/jquery.appear.js",
-    "js/yjsg.yjsgroundprogress.js",
-    "js/popper.min.js",
-    "js/bootstrap.min.js",
-    "js/googlemap.js",
     "js/loadEvents.js"
   ];
   scripts.map(k => {
@@ -70,7 +56,7 @@ async function getGallery(lng){
   /* Renderizo idioma */
   tmpGallery = renderHtml(tmpGallery, lng);
   tmpSection = renderHtml(tmpSection, lng);
-  
+  const api = (/localhost/i.test(window.location.host) ? lng.website.apiDev : lng.website.api )
   productsBooking.map((k,i) => {
       let stars = [];
 
@@ -78,8 +64,8 @@ async function getGallery(lng){
       k.descriptionmin = k.description.substring(0, 50) + "...";
       k.descriptionmiddle = k.description.substring(0, 250) + "...";
       /* Agrego dominio a las imagenes y selecciono imagen random */
-      k.pictureBase = lng.website.api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
-      k.pictureBase1 = lng.website.api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
+      k.pictureBase = api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
+      k.pictureBase1 = api + k.pictures[ (Math.floor(Math.random() * k.pictures.length)) ];
 
       /* Agrego las estrellas de cada alojamiento */
       for (let index = 0; index < k.stars; index++) {
@@ -117,33 +103,35 @@ async function getGallery(lng){
   return true;
 }
 async function getTeam(lng){
-if($(`#teamList`).length > 0){
-  const endPoint = "endpoint=Booking&action=getAllProfiles";
-  const lenguage = {}
-  const profiles = await (new service()).get(endPoint , lenguage);
-  if(profiles.code == 200){
-      const team = await (new service(`components/ourTeam`)).html(".html");   
-      const data = profiles.result;
-      /* Renderizo perfiles */
-      data.map((k,i) => {
-        k.picture = lng.website.api + k.picture;
-        const renderTeam = renderHtml(team, k, /\[\[(.*?)\]\]/g)
-        $(`#teamList`).length > 0 && $(`#teamList`).append(renderTeam);
-      });
+  const api = (/localhost/i.test(window.location.host) ? lng.website.apiDev : lng.website.api )
+  if($(`#teamList`).length > 0){
+    const endPoint = "endpoint=Booking&action=getAllProfiles";
+    const lenguage = {}
+    const profiles = await (new service()).get(endPoint , lenguage);
+    if(profiles.code == 200){
+        const team = await (new service(`components/ourTeam`)).html(".html");   
+        const data = profiles.result;
+        /* Renderizo perfiles */
+        data.map((k,i) => {
+          k.picture = api + k.picture;
+          const renderTeam = renderHtml(team, k, /\[\[(.*?)\]\]/g)
+          $(`#teamList`).length > 0 && $(`#teamList`).append(renderTeam);
+        });
+    }
   }
-}
-return true;
+  return true;
 }
 async function getBannerHome(lng){
   if($(`#slides ul.slides-container`).length > 0){
     const endPoint = "endpoint=Booking&action=getAllImages";
     const lenguage = {}
     const images = await (new service()).get(endPoint , lenguage);
+    const api = (/localhost/i.test(window.location.host) ? lng.website.apiDev : lng.website.api )
     if(images.code == 200){
         const data = images.result;
         /* Renderizo perfiles */
         data.map((k,i) => {
-          const img = lng.website.api + k;
+          const img = api + k;
           const slide = `<li>
                             <img src="${img}" alt="" class="img">
                         </li>`;
@@ -159,6 +147,7 @@ async function viewDetail(lng){
   /* obtengo referencia de producto */
   const hotels = JSON.parse( db.get('products') );
   const id = window.location.search.split('?')[1];
+  const api = (/localhost/i.test(window.location.host) ? lng.website.apiDev : lng.website.api )
   let hotel = hotels.filter( k => k.id === id )
   if(hotel){
     hotel = hotel[0];
@@ -166,18 +155,10 @@ async function viewDetail(lng){
     /* Renderizamos el contenido con la seleccion */
     let renderHTML = renderHtml(tmpBookingDetail, hotel, /\[\[(.*?)\]\]/g);
     
-    // /* Agrego lo que incluye cada alojamiento */
-    // let pictures = hotel.pictures.map((inc) => {
-    //   return `<div class="our-rooms-icon">
-    //               <figure><img src="images/${inc.icon}" alt="" class="img-fluid"></figure>
-    //               <div class="our-rooms-icon-txt1">${inc.text}</div>
-    //               <div class="our-rooms-icon-txt2">${inc.inc}</div>
-    //           </div>`
-    // });
     let sliderItem = [];
     let sliderItemInner = [];
     for (let index = 0; index < hotel.pictures.length; index++) {
-      let elm = lng.website.api + hotel.pictures[index];
+      let elm = api + hotel.pictures[index];
       /* Imagen ampliada */
       const htmlItem = `<div class="slider-item">
                           <img src="${elm}" alt="" class="img-fluid">
