@@ -1,0 +1,110 @@
+[
+    {
+        "id": "ba7fe0c7-3322-0353-a48f-028d38db1b1c",
+        "title": "Orlando",
+        "subtitle": "3 Bed Stay in Orlando",
+        "description": "Discover the comfort and elegance of our spacious rooms in Orlando. Each one has been carefully designed to provide a relaxing and cozy atmosphere where you can rest and rejuvenate. With a variety of options to meet your needs, we invite you to find the perfect room for your stay.",
+        "price": "199",
+        "currency": "US",
+        "views": "50 reviews",
+        "includes": [
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026",
+            "lng": "-73.7212941"
+        },
+        "pictures": [
+            "/assets/accommodations/3bedstayinorlando/image6.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image7.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image8.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image9.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image10.jpeg",
+            "/assets/accommodations/3bedstayinorlando/image11.jpeg"
+        ]
+    },
+    {
+        "id": "5e4e6a92-1b44-c134-eb0e-bcf6afcbacf4",
+        "title": "Kissimmee",
+        "subtitle": "Apartment in Kissimmee",
+        "description": "Enjoy an unforgettable stay in our apartment in Kissimmee. With spacious and comfortable rooms equipped with all the amenities you need, our apartment offers a relaxing and cozy environment. Whether you're on a family vacation or traveling for business, our apartment is the perfect place to rest and enjoy your stay in the beautiful city of Kissimmee. With a convenient location near popular attractions and excellent services available, we are committed to providing an unmatched experience. Book now and discover everything our apartment in Kissimmee has to offer!",
+        "price": "414",
+        "currency": "US",
+        "views": "50 reviews",
+        "includes": [
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026",
+            "lng": "-73.7212941"
+        },
+        "pictures": [
+            "/assets/accommodations/apartmentinkissimmee/image0.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image1.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image2.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image3.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image4.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image5.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image6.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image7.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image8.jpeg",
+            "/assets/accommodations/apartmentinkissimmee/image9.jpeg"
+        ]
+    },
+    {
+        "id": "f0fcac0b-553b-624c-f820-026859c3fde2",
+        "title": "Pinehills",
+        "subtitle": "Family Stay in Pinehills",
+        "description": "Discover the comfort and elegance of our spacious family rooms in Pinehills. Each one has been carefully designed to provide a relaxing and cozy atmosphere where you can rest and rejuvenate. With a variety of options to meet your needs, we invite you to find the perfect family room for your stay.",
+        "price": "336",
+        "currency": "US",
+        "views": "50 reviews",
+        "includes": [
+            "0a00514d-4b6b-055a-47ef-23738a52db6d",
+            "6e601664-729f-74c2-da16-af3200293d65",
+            "6dd5b2e4-77d2-4062-2e0c-d4a7b306a6e1",
+            "6de62576-61d1-c04e-c62b-b746988e55df",
+            "3fba7be2-9489-ee85-9ad6-546b955fc18a",
+            "3beb7300-e72f-77e1-3413-07eab9632da8",
+            "3771f11b-4740-40db-f934-c84a07af824c"
+        ],
+        "stars": 5,
+        "location": {
+            "lat": "40.7080026",
+            "lng": "-73.7212941"
+        },
+        "pictures": [
+            "/assets/accommodations/familystayatpinehillsnearparks/image0.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image1.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image2.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image3.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image4.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image5.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image6.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image7.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image8.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image9.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image10.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image11.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image12.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image13.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image14.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image15.jpeg",
+            "/assets/accommodations/familystayatpinehillsnearparks/image16.jpeg"
+        ]
+    }
+]

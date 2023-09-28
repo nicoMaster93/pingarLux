@@ -1,0 +1,145 @@
+{
+    "website": {
+        "api": "http://localhost/proyectsInHouse/JP/backend",
+        "viewsAllowed": [
+            "index",
+            "about",
+            "rooms",
+            "contacts",
+            "details"
+        ],
+        "bookingPage": ["rooms"],
+        "bookingFormPage": ["index", "rooms","details"],
+        "homePage": "index",
+        "detailPage": "details",
+        "socials": {
+            "facebook": "https://www.facebook.com",
+            "twitter": "https://twitter.com",
+            "instagram": "https://www.instagram.com"
+        }
+    },
+    "menu": {
+        "home": "Home",
+        "about": "About",
+        "rooms": "Listings",
+        "contact": "Contact",
+        "details": "Details"
+    },
+    "countries": {
+        "selected": "usa",
+        "list": {
+            "usa": {
+                "label": "English (USA)",
+                "flag": "images/flags/us.png",
+                "path": "en"
+            },
+            "col": {
+                "label": "Spanish (COL)",
+                "flag": "images/flags/co.png",
+                "path": "es"
+            }
+        }
+    },
+    "pages": {
+        "home": {
+            "clients": {
+                "title": "WHAT OUR CLIENTS SAY",
+                "description": "These are some comments from our satisfied clients during their stay at our luxury accommodations. We invite you to join them and enjoy an unforgettable experience with us!"
+            }
+        },
+        "about": {
+            "title": "DISCOVER OUR PASSION FOR HOSPITALITY",
+            "description": "At our company, we are passionate about providing our guests with an exceptional experience. From the comfort of our luxury rooms to the personalized attention from our team, we strive to exceed all expectations. Come and discover why we are the perfect choice for your stay!",
+            "slider": {
+                "one": {
+                    "image": "images/gallery01.jpeg",
+                    "info": {
+                        "title": "EXCELLENCE IN HOSPITALITY",
+                        "description": "We believe in providing exceptional service to each of our guests. Our dedicated team will ensure that your stay is unforgettable and filled with special moments. We invite you to discover excellence in hospitality with us!",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
+                    }
+                },
+                "two": {
+                    "image": "images/gallery02.jpeg",
+                    "info": {
+                        "title": "OFFICE SPACE",
+                        "description": "We provide flex space largely driven by E-commerce consults, Travel nurse, and IT Engineers to name a few. In this date and time working from a vacation home is a way to keep mental health a main priority. While still fulfilling mission needs.",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
+                    }
+                },
+                "three": {
+                    "image": "images/gallery02.jpeg",
+                    "info": {
+                        "title": "LUXURY AND COMFORT",
+                        "description": "The pandemic really put us the housekeepers to the test. Our crews had to continually put more effort than ever before into cleaning and sanitizing surfaces to help stop the spread of COVID-19. All of our listings will exceed your expectations.",
+                        "author": "Julio Altamar",
+                        "occupation": "Crew member"
+                    }
+                }
+            },
+            "team": {
+                "title": "OUR TEAM",
+                "subtitle": "MEET OUR EXPERTS",
+                "description": "Behind every exceptional experience is an exceptional team. Our team of passionate and dedicated professionals is ready to provide you with personalized service and ensure that you make the most of your stay. Get to know our experts and be amazed!"
+            }
+        },
+        "contact": {
+            "title": "CONTACT INFORMATION",
+            "description": "We would love to hear from you! If you have any questions, comments, or special requests, please don't hesitate to get in touch with us. Our friendly customer service team is available 24/7 to assist you with anything you need. We look forward to hearing from you!",
+            "form": {
+                "title": "CONTACT FORM",
+                "name": "Name",
+                "email": "Email",
+                "comment": "Comments",
+                "button": "Send Message"
+            },
+            "info": {
+                "present": "STAY IN TOUCH",
+                "title": "Pingar Lux Address",
+                "titleSmall": "Veteran Owned & Operated",
+                "location": {
+                    "address": "122 South City, Gridgum Street\n NY 12099, United States",
+                    "lat": "40.7080026",
+                    "lng": "-73.7212941"
+                },
+                "tel": {
+                    "label": "Call:",
+                    "value": "+1 (368) 1234567"
+                },
+                "email": {
+                    "label": "Email:",
+                    "value": "info@pingarlux.co"
+                }
+            }
+        },
+        "rooms": {
+            "description": "Discover comfort and elegance in our spacious lodgings. Each one of them has been carefully designed to offer you a relaxing and welcoming environment, where you can rest and rejuvenate. With a variety of options to suit your needs, we recommend finding the perfect accommodation for your stay.",
+            "seeDetails": "See Details",
+            "selectDetails": "SELECT THIS",
+            "typeCost": "PER NIGHT",
+            "deposit": {
+                "label": "DEPOSIT",
+                "value": "REQUIRED 30%"
+            },
+            "reserve": "Reserve "
+        },
+        "footer": {
+            "description": "We take pride in offering our guests a unique and memorable experience. Our goal is to provide exceptional service and ensure that you feel at home during your stay. Thank you for choosing us, and we look forward to welcoming you soon!"
+        },
+        "404":{
+            "title":"<span>OPPS!</span> THIS PAGE COULD NOT BE FOUND!",
+            "description":"Sorry but the page you are looking for does not exist has changed name or been removed",
+            "button":"go to homepage"
+        }
+    },
+    "formBooking": {
+        "button": "CHECK AVAILABILITY",
+        "checkin": "Check-in",
+        "checkout": "Check-out",
+        "adults": "Adults",
+        "children": "Children",
+        "email": "Email"
+    }
+}

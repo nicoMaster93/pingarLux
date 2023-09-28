@@ -1,0 +1,20 @@
+[
+    {
+        "id": "3343b974-622b-480c-8cbd-8c985b01a082",
+        "fechaIni": "2023-06-16",
+        "fechaEnd": "2023-06-22",
+        "adults": 3,
+        "children": 0,
+        "email": "nico.hernandez093@gmail.com",
+        "lng": "en"
+    },
+    {
+        "id": "7f907a96-4a31-1165-7652-cbc2f06fcb60",
+        "fechaIni": "2023-06-16",
+        "fechaEnd": "2023-06-22",
+        "adults": 3,
+        "children": 0,
+        "email": "nico.hernandez093@gmail.com",
+        "lng": "en"
+    }
+]

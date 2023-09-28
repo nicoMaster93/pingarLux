@@ -1,0 +1,19 @@
+# activa el motor de reescritura
+
+RewriteEngine On
+
+# Redirigir vistas específicas a index.html
+
+RewriteRule ^(index|about|services|rooms|contacts|details)(\.html)?$ index.html [L]
+
+# valida si el archivo solicitado no existe en el sistema
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# valida si el archivo solicitado no existe como un directorio
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir cualquier otra URL no existente a 404.html
+
+RewriteRule ^ 404.html [L]

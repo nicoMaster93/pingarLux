@@ -1,0 +1,145 @@
+{
+    "website": {
+        "api": "http://localhost/proyectsInHouse/JP/backend",
+        "viewsAllowed": [
+            "index",
+            "about",
+            "rooms",
+            "contacts",
+            "details"
+        ],
+        "bookingPage": ["rooms"],
+        "bookingFormPage": ["index", "rooms"],
+        "homePage": "index",
+        "detailPage": "details",
+        "socials": {
+            "facebook": "https://www.facebook.com",
+            "twitter": "https://twitter.com",
+            "instagram": "https://www.instagram.com"
+        }
+    },
+    "menu": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "rooms": "Listado",
+        "contact": "Contacto",
+        "details": "Detalle"
+    },
+    "countries": {
+        "selected": "col",
+        "list": {
+            "usa": {
+                "label": "Inglés (EE. UU.)",
+                "flag": "images/flags/us.png",
+                "path": "en"
+            },
+            "col": {
+                "label": "Español (COL)",
+                "flag": "images/flags/co.png",
+                "path": "es"
+            }
+        }
+    },
+    "pages": {
+        "home": {
+            "clients": {
+                "title": "LO QUE DICEN NUESTROS CLIENTES",
+                "description": "Estos son algunos comentarios de nuestros clientes satisfechos durante su estancia en nuestros lujosos alojamientos. ¡Te invitamos a unirte a ellos y disfrutar de una experiencia inolvidable con nosotros!"
+            }
+        },
+        "about": {
+            "title": "DESCUBRE NUESTRA PASIÓN POR EL HOSPEDAJE",
+            "description": "En nuestra empresa, nos apasiona brindar a nuestros huéspedes una experiencia excepcional. Desde la comodidad de nuestras habitaciones de lujo hasta la atención personalizada de nuestro equipo, nos esforzamos por superar todas las expectativas. ¡Ven y descubre por qué somos la elección perfecta para tu estadía!",
+            "slider": {
+                "one": {
+                    "image": "images/gallery01.jpeg",
+                    "info": {
+                        "title": "EXCELENCIA EN HOSPITALIDAD",
+                        "description": "En nuestros alojamientos, creemos en brindar un servicio excepcional a cada uno de nuestros huéspedes. Nuestro equipo dedicado se asegurará de que tu estadía sea inolvidable y llena de momentos especiales. ¡Te invitamos a descubrir la excelencia en hospitalidad con nosotros!",
+                        "author": "Juliana Pinzón",
+                        "occupation": "ADMIN"
+                    }
+                },
+                "two": {
+                    "image": "images/gallery02.jpeg",
+                    "info": {
+                        "title": "LUJO Y COMODIDAD",
+                        "description": "Descubre un mundo de lujo y comodidad en nuestros exclusivos alojamientos. Cada detalle ha sido cuidadosamente seleccionado para ofrecerte una experiencia única. Desde nuestras instalaciones de primer nivel hasta nuestras impresionantes vistas, estamos comprometidos con tu satisfacción total. ¡Ven y vive el lujo con nosotros!",
+                        "author": "SILIBISTRO KARKASHADZE",
+                        "occupation": "MANAGER"
+                    }
+                },
+                "three": {
+                    "image": "images/gallery02.jpeg",
+                    "info": {
+                        "title": "LUJO Y CONFORT",
+                        "description": "La pandemia realmente nos puso a prueba a las amas de casa. Nuestros equipos tuvieron que esforzarse continuamente más que nunca en limpiar y desinfectar las superficies para ayudar a detener la propagación de COVID-19. Todos nuestros listados superarán sus expectativas.",
+                        "author": "Julio Altamar",
+                        "occupation": "Crew member"
+                    }
+                }
+            },
+            "team": {
+                "title": "NUESTRO EQUIPO",
+                "subtitle": "CONOCE A NUESTROS EXPERTOS",
+                "description": "Detrás de cada experiencia excepcional hay un equipo excepcional. Nuestro equipo de profesionales apasionados y comprometidos está listo para brindarte un servicio personalizado y garantizar que disfrutes al máximo de tu estadía. ¡Conoce a nuestros expertos y déjate sorprender!"
+            }
+        },
+        "contact": {
+            "title": "INFORMACIÓN DE CONTACTO",
+            "description": "¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o solicitud especial, no dudes en ponerte en contacto con nosotros. Nuestro amable equipo de atención al cliente está disponible las 24 horas para ayudarte en todo lo que necesites. ¡Esperamos con ansias poder atenderte!",
+            "form": {
+                "title": "FORMULARIO DE CONTACTO",
+                "name": "Nombre",
+                "email": "Email",
+                "comment": "Comentarios",
+                "button": "Enviar mensaje"
+            },
+            "info": {
+                "present": "MANTÉNGASE EN CONTACTO",
+                "title": "Dirección de Pingar Lix",
+                "titleSmall": "Propiedad y operado por veteranos",
+                "location": {
+                    "address": "122 South City, Gridgum Street\n NY 12099, United States",
+                    "lat": "40.7080026",
+                    "lng": "-73.7212941"
+                },
+                "tel": {
+                    "label": "Llamar:",
+                    "value": "+1 (368) 1234567"
+                },
+                "email": {
+                    "label": "Email:",
+                    "value": "info@pingarlux.co"
+                }
+            }
+        },
+        "rooms": {
+            "description": "Descubre el confort y la elegancia en nuestros amplios hospedajes. Cada una de ellos ha sido cuidadosamente diseñado para ofrecerte un ambiente relajante y acogedor, donde podrás descansar y rejuvenecer. Con una variedad de opciones para adaptarse a tus necesidades, te invitamos a descubrir el hospedaje perfecto para tu estadía.",
+            "seeDetails": "Ver detalle",
+            "selectDetails": "SELECCIONAR",
+            "typeCost": "POR NOCHE",
+            "deposit": {
+                "label": "DEPÓSITO",
+                "value": "REQUERIDO 30%"
+            },
+            "reserve": "Reservar"
+        },
+        "footer": {
+            "description": "En nuestro hotel, nos enorgullece ofrecer a nuestros huéspedes una experiencia única y memorable. Nuestro objetivo es brindarte un servicio excepcional y asegurarnos de que te sientas como en casa durante tu estadía. ¡Gracias por elegirnos y esperamos poder darte la bienvenida pronto!"
+        },
+        "404":{
+            "title":"<span>OPPS!</span> ESTA PÁGINA NO PUEDE SER ENCONTRADA!",
+            "description":"Lo sentimos pero la página que busca no existe, ha cambiado de nombre o ha sido eliminada",
+            "button":"Ir a la página de inicio"
+        }
+    },
+    "formBooking": {
+        "button": "VER DISPONIBILIDAD",
+        "checkin": "Fecha de llegada",
+        "checkout": "Fecha de salida",
+        "adults": "Adultos",
+        "children": "Niños",
+        "email": "Correo"
+    }
+}
