@@ -1,5 +1,5 @@
 <?php
-
+// echo "hola mundo "
 class Database {
     protected $conn;
     public function __construct() {
